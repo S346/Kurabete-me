@@ -21,5 +21,14 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func cameraBtn(sender: AnyObject) {
+    }
+    
+    @IBAction func albumBtn(sender: AnyObject) {
+    }
+    
+    @IBAction func mirrorBtn(sender: AnyObject) {
+    }
+    
 }
 
