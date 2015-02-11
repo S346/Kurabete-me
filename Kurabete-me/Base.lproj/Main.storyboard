@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,38 +17,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbO-8h-lK9">
-                                <rect key="frame" x="164" y="225" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aa2-0g-5hm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="691"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpu-nH-2tS">
+                                <rect key="frame" x="66" y="617" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="cameraBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7jj-gu-I2c"/>
+                                    <action selector="compapareBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="k8A-Lj-Ay7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9S-Rl-2xi">
-                                <rect key="frame" x="164" y="327" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0S-WV-my7">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="albumBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="teU-q0-kCX"/>
+                                    <action selector="bbb:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yBh-cQ-R10"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoT-l1-cQa">
-                                <rect key="frame" x="164" y="440" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohb-gm-3er">
+                                <rect key="frame" x="263" y="617" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="mirrorBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tkE-js-Y4X"/>
+                                    <action selector="ccc:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="O86-65-vcA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umy-G5-gLl">
+                                <rect key="frame" x="62" y="617" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="comparepop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8XB-E2-cnw"/>
+                                    <action selector="comparepop:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="DZ3-be-PHW"/>
+                                    <action selector="comparepush:" destination="vXZ-lx-hvc" eventType="touchDown" id="dnj-Qm-uwP"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-BE-stp">
+                                <rect key="frame" x="129" y="272" width="94" height="29"/>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n0S-WV-my7" firstAttribute="leading" secondItem="Gpu-nH-2tS" secondAttribute="trailing" constant="52" id="6oM-nz-tOo"/>
+                            <constraint firstItem="aa2-0g-5hm" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="9hy-EO-D1M"/>
+                            <constraint firstAttribute="bottom" secondItem="Umy-G5-gLl" secondAttribute="bottom" constant="20" symbolic="YES" id="Eg7-kg-EDW"/>
+                            <constraint firstItem="aa2-0g-5hm" firstAttribute="centerX" secondItem="n0S-WV-my7" secondAttribute="centerX" id="HCy-5w-UPQ"/>
+                            <constraint firstAttribute="trailing" secondItem="aa2-0g-5hm" secondAttribute="trailing" id="KbF-L7-FUL"/>
+                            <constraint firstItem="Ohb-gm-3er" firstAttribute="leading" secondItem="n0S-WV-my7" secondAttribute="trailing" constant="53" id="Nty-iG-Ive"/>
+                            <constraint firstItem="n0S-WV-my7" firstAttribute="baseline" secondItem="Gpu-nH-2tS" secondAttribute="baseline" id="bAy-HD-WPn"/>
+                            <constraint firstAttribute="bottom" secondItem="Gpu-nH-2tS" secondAttribute="bottom" constant="20" symbolic="YES" id="dtH-NC-t8f"/>
+                            <constraint firstItem="n0S-WV-my7" firstAttribute="leading" secondItem="Umy-G5-gLl" secondAttribute="trailing" constant="56" id="exd-8n-8kV"/>
+                            <constraint firstItem="n0S-WV-my7" firstAttribute="baseline" secondItem="Ohb-gm-3er" secondAttribute="baseline" id="gJr-UP-qPc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aa2-0g-5hm" secondAttribute="bottom" constant="-24" id="j5j-Fr-IQo"/>
+                            <constraint firstItem="n0S-WV-my7" firstAttribute="baseline" secondItem="Umy-G5-gLl" secondAttribute="baseline" id="vNA-He-pUm"/>
+                            <constraint firstItem="aa2-0g-5hm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="wP5-gV-q8c"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Gpu-nH-2tS"/>
+                                <exclude reference="eSA-BE-stp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="myimage" destination="aa2-0g-5hm" id="a5g-Tw-Ssz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

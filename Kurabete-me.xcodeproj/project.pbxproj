@@ -13,6 +13,7 @@
 		7B66E0241A89CFD70005D1AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B66E0231A89CFD70005D1AC /* Images.xcassets */; };
 		7B66E0271A89CFD70005D1AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B66E0251A89CFD70005D1AC /* LaunchScreen.xib */; };
 		7B66E0331A89CFD70005D1AC /* Kurabete_meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66E0321A89CFD70005D1AC /* Kurabete_meTests.swift */; };
+		7B7F48F01A8B723800558564 /* DSC_0965.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B7F48EF1A8B723800558564 /* DSC_0965.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7B66E02C1A89CFD70005D1AC /* Kurabete-meTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kurabete-meTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B66E0311A89CFD70005D1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B66E0321A89CFD70005D1AC /* Kurabete_meTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kurabete_meTests.swift; sourceTree = "<group>"; };
+		7B7F48EF1A8B723800558564 /* DSC_0965.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC_0965.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		7B66E01A1A89CFD70005D1AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7B7F48EF1A8B723800558564 /* DSC_0965.jpg */,
 				7B66E01B1A89CFD70005D1AC /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7F48F01A8B723800558564 /* DSC_0965.jpg in Resources */,
 				7B66E0221A89CFD70005D1AC /* Main.storyboard in Resources */,
 				7B66E0271A89CFD70005D1AC /* LaunchScreen.xib in Resources */,
 				7B66E0241A89CFD70005D1AC /* Images.xcassets in Resources */,
@@ -405,6 +409,7 @@
 				7B66E0381A89CFD70005D1AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B66E0391A89CFD70005D1AC /* Build configuration list for PBXNativeTarget "Kurabete-meTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				7B66E03B1A89CFD70005D1AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
